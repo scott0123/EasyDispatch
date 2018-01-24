@@ -1,0 +1,19 @@
+//
+//  EasyDispatch.h
+//  EasyDispatch
+//
+//  Created by ScottLiu on 1/24/18.
+//  Copyright © 2018 Scott Liu. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+//! Project version number for EasyDispatch.
+FOUNDATION_EXPORT double EasyDispatchVersionNumber;
+
+//! Project version string for EasyDispatch.
+FOUNDATION_EXPORT const unsigned char EasyDispatchVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <EasyDispatch/PublicHeader.h>
+
+

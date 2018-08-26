@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66294B36212DB1EF00038C89 /* EasyDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 66294B35212DB1EF00038C89 /* EasyDispatch.m */; };
 		6673AAAA2019211500F22215 /* EasyDispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6673AAA02019211500F22215 /* EasyDispatch.framework */; };
 		6673AAAF2019211500F22215 /* EasyDispatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6673AAAE2019211500F22215 /* EasyDispatchTests.m */; };
 		6673AAB12019211500F22215 /* EasyDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6673AAA32019211500F22215 /* EasyDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66DD454521327C9A004150FB /* SLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD454421327C9A004150FB /* SLTimer.m */; };
+		66DD454721327CF0004150FB /* SLTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 66DD454621327CF0004150FB /* SLTimer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66294B35212DB1EF00038C89 /* EasyDispatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyDispatch.m; sourceTree = "<group>"; };
 		6673AAA02019211500F22215 /* EasyDispatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyDispatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6673AAA32019211500F22215 /* EasyDispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyDispatch.h; sourceTree = "<group>"; };
 		6673AAA42019211500F22215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6673AAA92019211500F22215 /* EasyDispatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyDispatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6673AAAE2019211500F22215 /* EasyDispatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyDispatchTests.m; sourceTree = "<group>"; };
 		6673AAB02019211500F22215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66DD454421327C9A004150FB /* SLTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLTimer.m; sourceTree = "<group>"; };
+		66DD454621327CF0004150FB /* SLTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLTimer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				6673AAA32019211500F22215 /* EasyDispatch.h */,
+				66294B35212DB1EF00038C89 /* EasyDispatch.m */,
+				66DD454621327CF0004150FB /* SLTimer.h */,
+				66DD454421327C9A004150FB /* SLTimer.m */,
 				6673AAA42019211500F22215 /* Info.plist */,
 			);
 			path = EasyDispatch;
@@ -93,6 +102,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DD454721327CF0004150FB /* SLTimer.h in Headers */,
 				6673AAB12019211500F22215 /* EasyDispatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DD454521327C9A004150FB /* SLTimer.m in Sources */,
+				66294B36212DB1EF00038C89 /* EasyDispatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +353,7 @@
 				INFOPLIST_FILE = EasyDispatch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-liu.EasyDispatch";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -362,6 +375,7 @@
 				INFOPLIST_FILE = EasyDispatch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-liu.EasyDispatch";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -1,3 +1,3 @@
 # EasyDispatch
 
-This project is suspended until I have time to work on it again.
+This project has now resumed development!

@@ -24,3 +24,7 @@ FOUNDATION_EXPORT const unsigned char EasyDispatchVersionString[];
  @param block  The block to submit. This parameter cannot be NULL.
  */
 void delay(double time, dispatch_block_t block);
+
+// Use this version if you want to be able to update your UI elements or access
+// the main thread from within the block.
+void delay_main(double time, dispatch_block_t block);

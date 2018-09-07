@@ -25,7 +25,7 @@ void delay(double time, dispatch_block_t block){
     [timer start];
 }
 
-void delay_main(float time, dispatch_block_t block){
+void delay_main(double time, dispatch_block_t block){
     SLTimer *timer = [[SLTimer alloc] init];
     timer = [timer initWithTimeIntervalSinceNow:time tolerance:0 queue:dispatch_get_main_queue() block:^(SLTimer* timer){
         block();

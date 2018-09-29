@@ -43,7 +43,7 @@ Based on a one-shot 0 leeway timer with a handler.
 Wrapper over dispatch\_source\_set\_event\_handler.
 
 ## Common errors
-1. `dyld: Library not loaded: ...`
+1. `dyld: Library not loaded: ... Reason: image not found`
 
 	XCode might complain that the image cannot be found. To fix this, there are two methods
 	

@@ -43,8 +43,8 @@ Based on a one-shot 0 leeway timer with a handler.
 Wrapper over dispatch\_source\_set\_event\_handler.
 
 ## Common errors
-1. `dyld: Library not loaded: ... Reason: image not found`
-
+1. <details><summary><tt>dyld: Library not loaded: ... Reason: image not found</tt></summary>
+<p>
 	XCode might complain that the image cannot be found. To fix this, there are two methods
 	
 	* General > Embedded binaries > + (add) > Find EasyDispatch.framework
@@ -52,8 +52,9 @@ Wrapper over dispatch\_source\_set\_event\_handler.
 	* Build phases > + (add) > New Copy Files Phase > Destination = frameworks > + (add) > Find EasyDispatch.framework
 
 	You can also change it into a static library and recompiling the framework file.
-Build setting > Linking > Mach-O Type = Static Library
-
+    
+    * Build setting > Linking > Mach-O Type = Static Library
+</p>
 
 ## License
 MIT License

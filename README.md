@@ -45,8 +45,8 @@ Wrapper over dispatch\_source\_set\_event\_handler.
 ## Common errors
 <details>
 <summary><b>dyld: Library not loaded: ... Reason: image not found</b></summary>
-
 <p>
+
 XCode might complain that the image cannot be found. To fix this, there are two methods
 	
 * General > Embedded binaries > + (add) > Find EasyDispatch.framework

@@ -44,7 +44,7 @@ Wrapper over dispatch\_source\_set\_event\_handler.
 
 ## Common errors
 <details>
-    <summary><tt>dyld: Library not loaded: ... Reason: image not found</tt></summary>
+    <summary>dyld: Library not loaded: ... Reason: image not found</summary>
 
     XCode might complain that the image cannot be found. To fix this, there are two methods
 	
